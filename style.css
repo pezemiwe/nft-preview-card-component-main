@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+  font-size: 18px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  background-color: var(--mainBG);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__container {
+  width: 250px;
+  height: 430px;
+  background-color: var(--cardBG);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image {
+  border-radius: 10px;
+}
+
+.card__image:hover {
+  cursor: pointer;
+}
+
+.card__image::after {
+    background: var(--Cyan);
+}
+
+.card__maintext {
+  font-weight: 600px;
+  color: var(--white);
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.card__maintext:hover {
+  color: var(--Cyan);
+}
+
+.card__subtext {
+  font-size: 13px;
+  color: var(--SoftBlue);
+  line-height: 20px;
+}
+
+.card__basetext {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.ethereum__text {
+    font-size: 12px;
+}
+
+.ethereum__image {
+  padding-right: 5px;
+}
+
+.clock__image {
+    padding-right: 5px;
+}
+
+.left__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.right__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--SoftBlue);
+  display: flex;
+  align-items: center;
+}
+
+.card__baseline {
+    margin: 15px 0 10px 0;
+    height: 1px;
+    background-color: var(--line);
+}
+
+.final__element {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.first__text {
+    font-size: 14px;
+    color: var(--SoftBlue);
+}
+
+.second__text {
+    font-size: 14px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.second__text:hover {
+    color: var(--Cyan);
+}
